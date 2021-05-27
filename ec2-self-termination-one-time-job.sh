@@ -13,5 +13,5 @@ then
         sudo shutdonw -h now
 else
         echo "Scheduling job for next iteration"
-        at + $nextJobMinutes minutes <<< sh $scriptAbsolutePath
+        at + $nextJobMinutes minutes <<< bash $scriptAbsolutePath
 fi
