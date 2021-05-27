@@ -8,8 +8,8 @@ difference=`expr $currentEpochTime - $lastUpdatedEpochTime`
 echo "Difference is $difference"
 if [ $difference -gt $interval ]
 then
-        echo "instance is terminating"
+        echo "Instance is terminating"
         sudo shutdonw -h now
 else
-        echo "nothing happend"
+        echo "Evaluation will be done in next iteration again."
 fi
